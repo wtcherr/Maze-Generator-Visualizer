@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Grid</title>
+</head>
+<body>
+    <nav>
+        <input type="radio" name="tool" value="wall">wall
+        <input type="radio" name="tool" value="start">start
+        <input type="radio" name="tool" value="end">end
+        <select name="algorithms" id="algoOptions" onchange="algoOptions()">
+            <option value="">Choose Algorithm</option>
+            <option value="BFS">BFS</option>
+            <option value="MazeGeneration">Maze Generation</option>
+        </select>
+        <div id="play-btn" onclick="Play()">Play</div>
+        <div id="randStartEnd-btn" onclick="RandomStartEnd()">Random Start&End</div>
+        <div id="reset-btn" onclick="Reset()">Reset</div>
+        <div id="clear-btn" onclick="Clear()">Clear</div>
+        <div id="randWalls-btn" onclick="RandomWalls()">Random Walls</div>
+    </nav>
+    <canvas></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
